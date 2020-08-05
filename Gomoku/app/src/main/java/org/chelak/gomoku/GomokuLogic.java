@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 public class GomokuLogic implements Serializable {
 
-    public class WinLineItem extends Pair<Integer, Integer> {
+    public static class WinLineItem extends Pair<Integer, Integer> {
         /**
          * Constructor for a Pair.
          *
@@ -37,7 +37,7 @@ public class GomokuLogic implements Serializable {
     private transient Delegate delegate;
 
     // Size of the board
-    private int boardSize = 15;
+    private int boardSize;
 
     // Importance of attack (1..16)
     private final static int ATTACK_FACTOR = 8;
@@ -244,7 +244,7 @@ public class GomokuLogic implements Serializable {
         for ( int i = 0; i < 5; ++i) {
             x-=dx;
             y-=dy;
-            winCells[i] = new WinLineItem(x,y);
+            winCells[i] = new WinLineItem(x, y);
         }
         return winCells;
     }

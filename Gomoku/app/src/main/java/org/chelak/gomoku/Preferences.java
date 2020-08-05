@@ -2,9 +2,7 @@ package org.chelak.gomoku;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Bundle;
 
-import java.io.Serializable;
 import java.util.Date;
 
 /**

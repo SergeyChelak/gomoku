@@ -9,10 +9,10 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
 
 /**
  * Created by Sergey on 31.12.2015.
@@ -65,7 +65,7 @@ public class GomokuActivity extends Activity {
     }
 
     @Override
-    protected void onSaveInstanceState(Bundle outState) {
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
         super.onSaveInstanceState(outState);
         getFragmentManager().putFragment(outState, BUNDLE_FRAGMENT_ID, gomokuFragment);
     }
