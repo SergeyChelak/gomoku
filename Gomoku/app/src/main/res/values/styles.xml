@@ -1,0 +1,9 @@
+<resources>
+
+    <style name="LisjakaTheme" parent="@style/Theme.AppCompat">
+            <item name="windowActionBar">false</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@drawable/backgrnd</item>
+    </style>
+
+</resources>

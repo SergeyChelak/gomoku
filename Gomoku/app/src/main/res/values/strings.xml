@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Gomoku</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="button_put">Put</string>
+
+    <string name="message_gamestate_draw">Draw</string>
+    <string name="message_gamestate_whiteWin">White won</string>
+    <string name="message_gamestate_blackWin">Black won</string>
+    <string name="button_newGame">New Game</string>
+
+    <string name="dialog_game_mode">Game Mode</string>
+
+    <string name="url_public_facebook">https://www.facebook.com/groups/tinyboardgames</string>
+
+</resources>
